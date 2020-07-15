@@ -22,7 +22,7 @@ const Activity = props => {
     
     return (
         <div>
-            {props.error !== '' ? <span>{props.error}</span> : ''}
+            {props.error !== '' ? <span className='error'>{props.error}</span> : ''}
             {
                 props.activity ?
                 props.isFetching ? <h3>Loading...</h3> :
