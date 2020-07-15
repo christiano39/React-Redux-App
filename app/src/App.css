@@ -42,9 +42,11 @@ h3 {
 
 p {
     font-size: 4rem;
+    font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 select {

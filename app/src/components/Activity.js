@@ -29,7 +29,7 @@ const Activity = props => {
                 <div className='activity'>
                     <h2>Here's an idea!</h2>
                     <p> You should {props.activity.activity.toLowerCase()}.</p>
-                    <p>{
+                    <p>{ expense().length > 0 ?
                         expense().map(item => {
                             if (item === 1) {
                                 return <span key={uuid()} className='money colored'>$</span>
@@ -37,6 +37,7 @@ const Activity = props => {
                                 return <span key={uuid()} className='money greyed'>$</span>
                             }
                         })
+                        : <span>It's FREE!</span>
                     }</p>
                 </div>
                 : ''
