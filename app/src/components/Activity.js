@@ -8,7 +8,7 @@ const Activity = props => {
             {
                 props.activity ?
                 props.isFetching ? <h2>Loading...</h2> :
-                <p>{props.activity.activity}</p>
+                <p>Here's an idea! You should {props.activity.activity.toLowerCase()}</p>
                 : ''
             }
         </div>
